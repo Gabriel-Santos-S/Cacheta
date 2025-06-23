@@ -13,7 +13,9 @@ O jogo feito foi a cacheta(Pif-Paf), porém adaptamos ela. A diferença é que e
 ##📋 Regras
 
 1° Deve ser feito combinações com cartas para elas serem tiradas da sua mão;
+
 2° Para o round ir para o próximo jogador, o atual deve descartá alguma carta;
+
 3° O jogador que tiver nenhuma carta no final ganha;
 
 ###Ciclo de ações
@@ -21,9 +23,13 @@ O jogo feito foi a cacheta(Pif-Paf), porém adaptamos ela. A diferença é que e
 O jogo trabalho nesta dinâmica
 
 1° Escolhe de onde vai comprar a carta(se for a primeira jogada, só terá a opção pela baralho);
+
 2° Escolhe se vai fazer uma Sequência, Trinca, Mostrar Placar ou Descarta;
+
 3° Se escolher Trinca ou Sequência ele vai pergunta quais são as 3 cartas;
+
 4° Se escolher Mostrar Placar ele mostrará o placar já salvo(se for a primeira jogada, vai estar J1 0 | J2 0);
+
 5° Se escolher descarte, a carta é descartada e o round e passado ao outro jogador.
 
 
