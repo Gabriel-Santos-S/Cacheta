@@ -52,15 +52,15 @@ void exibir_cartas(baralho_t *baralho_head)
 {
     baralho_t *atual = baralho_head;
 
-    printf("\nBaralho encadeado:\n");
+    printf("\n  CARTAS:\n");
 
     while (atual != NULL)
     {
-        if(atual->classe == 1) {printf("Classe: AS, Naipe: %s\n", atual->naipe);}
-        else if(atual->classe == 11) {printf("Classe: J, Naipe: %s\n", atual->naipe);}
-        else if(atual->classe == 12) {printf("Classe: Q, Naipe: %s\n", atual->naipe);}
-        else if(atual->classe == 13) {printf("Classe: K, Naipe: %s\n", atual->naipe);}
-        else{ printf("Classe: %d, Naipe: %s\n", atual->classe, atual->naipe); }
+        if(atual->classe == 1) {printf("  AS | %s\n", atual->naipe);}
+        else if(atual->classe == 11) {printf("  J | %s\n", atual->naipe);}
+        else if(atual->classe == 12) {printf("  Q | %s\n", atual->naipe);}
+        else if(atual->classe == 13) {printf("  K | %s\n", atual->naipe);}
+        else{ printf("  %d | %s\n", atual->classe, atual->naipe); }
         
         atual = atual->next; 
     }
@@ -192,7 +192,7 @@ baralho_t escolher_carta()
 
     do
     {
-        printf("\nDigite o valor da carta, ex(AS, 2-10, J=11, Q=12, K=13): ");
+        printf("\nDigite o valor da carta, ex(AS, 2-10, J, Q, K): ");
         scanf("%8s", valor);
 
         if (strcmp(valor, "AS") == 0 || strcmp(valor, "A") == 0) { carta.classe = 1; }
@@ -208,7 +208,7 @@ baralho_t escolher_carta()
 
         if (carta.classe < 1 || carta.classe > 13)
         {
-            printf("Valor invalido. Tente escolher um valor entre AS até K\n");
+            printf("Valor invalido. Tente escolher um valor entre AS ate K\n");
         }
 
     } while (carta.classe < 1 || carta.classe > 13);
@@ -262,7 +262,7 @@ int trinca(baralho_t **player_head, baralho_t conjunto[])
             carta_atual = carta_atual->next;
         }
 
-        if (!encontrado)
+        if (encontrado == 0)
         {
             printf("\nA carta %d nao tem em sua mao", i);
             return -1;
@@ -325,7 +325,7 @@ int sequencia(baralho_t **player_head, baralho_t conjunto[])
             carta_atual = carta_atual->next;
         }
 
-        if (!encontrado)
+        if (encontrado == 0)
         {
             printf("\nA carta %d nao tem em sua mao", i);
             return -1;
