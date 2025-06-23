@@ -72,4 +72,3 @@ gcc main.c jogo.c -o run.exe
 Após a escolha do usuário, ela faz as comparações com strings, usando “strcmp()”. A função converte os símbolos para valores. Se o valor for inválido ele mostra uma mensagem de erro, e a entrada é solicitada novamente.
 
 ---
-Por **Gabriel**
