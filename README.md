@@ -1,16 +1,20 @@
 # Cacheta
 **Trabalho-Avaliativo**
 
-##Cacheta (readaptada)
+**Cacheta (readaptada)**
 
 O jogo feito foi a cacheta(Pif-Paf), porém adaptamos ela. A diferença é que ela não possui os 2 coringas, só vai ser jogado com um baralho de 52 cartas.
 
 .Cada jogador recebe 6 cartas no início;
+
 .Combinações possíveis Trinca(3 classes iguais com 3 naipes diferentes) e Sequência(3 classe diferentes porém em ordem com 3 naipes iguais);
+
 .O jogador só poderá descartar 1 carta por round;
+
 .O jogador poderá fazer várias combinações por round.
 
-##📋 Regras
+
+📋 Regras
 
 1° Deve ser feito combinações com cartas para elas serem tiradas da sua mão;
 
@@ -18,7 +22,7 @@ O jogo feito foi a cacheta(Pif-Paf), porém adaptamos ela. A diferença é que e
 
 3° O jogador que tiver nenhuma carta no final ganha;
 
-###Ciclo de ações
+**Ciclo de ações**
 
 O jogo trabalho nesta dinâmica
 
@@ -44,7 +48,7 @@ gcc main.c jogo.c -o run.exe
 ./run.exe
 ```
 
-#Funções:
+**Funções:**
 
 **void gerar_baralho();**
 *Esta função é responsável pela criação do baralho, recebendo o ponteiro da cabeça do baralho, uma array para guardar as cartas e uma array de naipes. Ela gera todas as cartas de um baralho, mistura as cartas e no final encadeia os baralho com a cabeça do baralho;
