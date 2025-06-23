@@ -5,17 +5,19 @@
 
 O jogo feito foi a cacheta(Pif-Paf), porém adaptamos ela. A diferença é que ela não possui os 2 coringas, só vai ser jogado com um baralho de 52 cartas.
 
-*Cada jogador recebe 6 cartas no início;
-*Combinações possíveis Trinca(3 classes iguais com 3 naipes diferentes) e Sequência(3 classe diferentes porém em ordem com 3 naipes iguais);
-*O jogador só poderá descartar 1 carta por round;
-*O jogador poderá fazer várias combinações por round.
+.Cada jogador recebe 6 cartas no início;
+.Combinações possíveis Trinca(3 classes iguais com 3 naipes diferentes) e Sequência(3 classe diferentes porém em ordem com 3 naipes iguais);
+.O jogador só poderá descartar 1 carta por round;
+.O jogador poderá fazer várias combinações por round.
 
 ##📋 Regras
+
 1° Deve ser feito combinações com cartas para elas serem tiradas da sua mão;
 2° Para o round ir para o próximo jogador, o atual deve descartá alguma carta;
 3° O jogador que tiver nenhuma carta no final ganha;
 
 ###Ciclo de ações
+
 O jogo trabalho nesta dinâmica
 
 1° Escolhe de onde vai comprar a carta(se for a primeira jogada, só terá a opção pela baralho);
